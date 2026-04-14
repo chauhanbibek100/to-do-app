@@ -1,0 +1,31 @@
+/* ========================================
+   CLEAR COMPLETED SECTION
+   ======================================== */
+
+.clear-completed-section {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  animation: slideUp 0.6s ease-out;
+}
+
+.clear-completed-section .btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.clear-completed-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 576px) {
+  .clear-completed-section {
+    padding: 1rem;
+  }
+
+  .clear-completed-section .btn {
+    width: 100%;
+  }
+}
