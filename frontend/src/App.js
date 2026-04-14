@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import TodoForm from "./components/TodoForm";
 import TodoFilters from "./components/TodoFilters";
@@ -42,14 +42,8 @@ function App() {
     setLoading(false);
   }, []);
 
-  // Fetch todos when authenticated or filters change
-  useEffect(() => {
-    if (isAuthenticated) {
-      fetchTodos();
-    }
-  }, [filters, isAuthenticated]);
-
-  const fetchTodos = async () => {
+  // Fetch todos function wrapped in useCallback
+  const fetchTodos = useCallback(async () => {
     try {
       setLoading(true);
       const data = await todoService.getTodos({
@@ -66,7 +60,14 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [filters]);
+
+  // Fetch todos when authenticated or filters change
+  useEffect(() => {
+    if (isAuthenticated) {
+      fetchTodos();
+    }
+  }, [filters, isAuthenticated, fetchTodos]);
 
   const fetchStats = async () => {
     try {
