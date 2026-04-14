@@ -313,24 +313,6 @@ npm install
 - [React Hooks API](https://react.dev/reference/react)
 - [MongoDB Documentation](https://docs.mongodb.com/)
 
-### Video Resources
-
-- [MERN Stack Tutorial](https://www.youtube.com/results?search_query=mern+todo+tutorial)
-- [React Hooks Deep Dive](https://www.youtube.com/results?search_query=react+hooks+tutorial)
-- [MongoDB + Node.js](https://www.youtube.com/results?search_query=mongodb+nodejs+tutorial)
-
-### Books
-
-- Full Stack React by Anthony Accomazzo
-- MERN Stack Mastery
-- MongoDB for JavaScript Developers
-
----
-
-## 🚀 Deployment
-
-### Frontend Deployment (Vercel/Netlify)
-
 ```bash
 cd frontend
 npm run build
@@ -346,48 +328,17 @@ cd backend
 # git push to deploy
 ```
 
----
-
-## 📝 Course Outcomes Mapped
-
-✅ **CO1**: Fundamental concepts of full-stack development - CRUD operations with Node.js, Express, MongoDB
-✅ **CO2**: Interactive and responsive front-end - React UI with Bootstrap
-✅ **CO3**: RESTful APIs and database integration - Complete API with MongoDB
-✅ **CO4**: Debug, test, and optimize - Error handling, validation, performance
-✅ **CO5**: Full-stack application design - Complete integration of frontend, backend, database
-
----
-
 ## 📄 License
 
-Educational Project - Full Stack Development Course
+Educational Project - Full Stack App
 
 ---
 
 ## 👨‍💻 Author
 
-**Your Name**
-**Course:** Full Stack Development - Unit 3.4
+**Your Name : Bibek Chauhan**
+
 **Date:** April 2026
-
----
-
-## ✨ Advanced Features (Optional Enhancements)
-
-Consider adding:
-
-- [ ] User Authentication (JWT)
-- [ ] User Profiles
-- [ ] Shared Todos
-- [ ] Recurring Tasks
-- [ ] Task Reminders/Notifications
-- [ ] Dark Mode Toggle
-- [ ] Export to PDF/CSV
-- [ ] Drag & Drop Reordering
-- [ ] Task Templates
-- [ ] Analytics Dashboard
-
----
 
 # **Happy Task Management! 🎉**
 
